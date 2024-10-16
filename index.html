@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <div id="login-form">
+        <h2>Iniciar Sesión</h2>
+        <input type="text" id="username" placeholder="Usuario" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button onclick="login()">Iniciar Sesión</button>
+    </div>
+
+    <div id="content" class="hidden">
+        <button onclick="toggleMode()">Cambiar a Modo Oscuro</button>
+        <h1>Información de la Casa JDRR</h1>
+        <ul>
+            <li>Tamaño: 800 m², 3 pisos</li>
+            <li>Estrato: 5 en Colombia</li>
+            <li>Jardín: 150 m²</li>
+            <li>Gimnasio: 20 m²</li>
+            <li>Piscina: 40 m² (forma rectangular de 5 x 8 m)</li>
+            <li>Ascensor: Capacidad para 10 personas</li>
+            <li>Ubicación: Zona lujosa de Medellín</li>
+            <li>Seguridad: 
+                <ul>
+                    <li>Puerta acorazada: Nivel 6</li>
+                    <li>Ventanas blindadas en toda la casa</li>
+                    <li>Sala secreta en el parqueadero (20 m²) con armas y sistema de seguridad</li>
+                    <li>Acceso: Botón secreto, huella y clave</li>
+                    <li>Portón inteligente: Controlable por smartphone</li>
+                    <li>Valla eléctrica y pinchos en las cercas</li>
+                    <li>Escoltas armados con chalecos antibalas</li>
+                </ul>
+            </li>
+            <li>Climatización: 
+                <ul>
+                    <li>Aire acondicionado WindFree de Samsung</li>
+                    <li>Filtro de aire de Samsung</li>
+                    <li>Dos humidificadores</li>
+                    <li>Piscina térmica: Con olas y iluminación RGB</li>
+                </ul>
+            </li>
+            <li>Diseño interior: Piso de mármol y piso térmico</li>
+            <li>Setup de PC Gamer: 
+                <ul>
+                    <li>Sistema Operativo: Windows 11 Pro</li>
+                    <li>Procesador: Intel Core i9-14900K</li>
+                    <li>Tarjeta Gráfica: NVIDIA RTX 4090</li>
+                    <li>Placa Base: ASUS ROG Strix Z790-E Gaming WiFi 7</li>
+                    <li>RAM: G.Skill Trident Z5 RGB 128GB DDR5 7200MHz</li>
+                    <li>Almacenamiento: 5 SSD NVMe Samsung 990 Pro de 4TB</li>
+                    <li>Refrigeración Líquida: Corsair iCUE H150i Elite Capellix XT 360mm</li>
+                    <li>Fuente de Alimentación: ASUS ROG Thor 1600W Platinum</li>
+                    <li>Chasis: Lian Li O11 Dynamic EVO XL</li>
+                    <li>UPS: APC Smart-UPS On-Line SRT 3000VA RM</li>
+                </ul>
+            </li>
+            <li>Consolas y Accesorios: 
+                <ul>
+                    <li>Xbox Series X</li>
+                    <li>PlayStation 5 Pro</li>
+                    <li>Mandos: Pro ASUS ROG Raikiri Pro (x2)</li>
+                    <li>Base de Carga: Razer Universal Quick Charging Stand</li>
+                    <li>Auriculares: ASUS ROG Theta 7.1</li>
+                </ul>
+            </li>
+            <li>Setup de Monitor y Periféricos: 
+                <ul>
+                    <li>Monitores: 3 x ASUS ROG Swift PG32UCDM 32" 4K 240Hz OLED</li>
+                    <li>Teclado: ASUS ROG Azoth</li>
+                    <li>Ratón: Razer Viper V2 Pro Wireless</li>
+                    <li>Mouse Pad: Corsair MM700 RGB Extended</li>
+                    <li>Silla Gamer: Herman Miller x Logitech G Embody</li>
+                    <li>Escritorio: Secretlab Magnus Pro XL Metal Desk</li>
+                    <li>Iluminación: Philips Hue Play Gradient Lightstrip</li>
+                    <li>Micrófono: Shure SM7B + GoXLR Mixer</li>
+                    <li>Cámara: Sony Alpha 7 IV + Lente 28-70mm</li>
+                    <li>Altavoces: Logitech G560 LIGHTSYNC RGB</li>
+                </ul>
+            </li>
+            <li>Extras para Optimizar el Espacio: 
+                <ul>
+                    <li>Soportes para monitores: Ergotron HX Monitor Arm (x3)</li>
+                    <li>Organizador de cables: Secretlab Magnetic Cable Management Bundle</li>
+                    <li>Alfombra Gaming: Razer Floor Rug</li>
+                </ul>
+            </li>
+            <li>Iluminación: 
+                <ul>
+                    <li>Lámparas: Elgato Key Light Air (x2)</li>
+                </ul>
+            </li>
+            <li>Sala de Cine: 
+                <ul>
+                    <li>Televisor: Neo QLED 8K de 85" o Premiere 4K de Samsung</li>
+                    <li>Altavoces: Samsung</li>
+                    <li>Insonorización para evitar ruidos</li>
+                </ul>
+            </li>
+            <li>Sistema de recolección de agua: El agua va a los tanques y se envía a las tuberías de la casa con un filtro para que sea potable.</li>
+            <li>Sistema de energía solar</li>
+            <li>Equipamiento de Moto: Cascos profesionales: 5 millones de pesos. Airbag de moto</li>
+            <li>Conectividad: Cable Ethernet: CAT 7 en toda la casa. Módem: ASUS con Wi-Fi 7. Expansores de internet.</li>
+            <li>Cosas Extras de los Baños: Sistema de drenaje profesional. Filtros de ducha Sanatée en todos los baños.</li>
+            <li>Vehículos: 
+                <ul>
+                    <li>Tesla Model X Plaid (blindado)</li>
+                    <li>Cadillac (blindado)</li>
+                    <li>Mazda CX-9 (blindado)</li>
+                    <li>Yamaha MT-09</li>
+                    <li>Kawasaki Ninja H2R</li>
+                    <li>Dos Raptor 700R tuneadas al máximo (blindadas)</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+  </html>
